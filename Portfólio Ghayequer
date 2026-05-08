@@ -1,0 +1,203 @@
+<!-- =========================
+ARQUIVO: index.html
+========================= -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Ghayequer Godoy</title>
+
+  <!-- Arquivo CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================
+  CABEÇALHO / MENU
+  ========================= -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Ghayequer Godoy</h1>
+
+      <!-- Botão menu mobile -->
+      <button class="menu-toggle" id="menu-toggle">
+        ☰
+      </button>
+
+      <!-- Menu de navegação -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Botão tema -->
+      <button class="theme-btn" id="theme-btn">
+        🌙
+      </button>
+    </nav>
+  </header>
+
+  <!-- =========================
+  SEÇÃO SOBRE
+  ========================= -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+
+      <p>
+        Meu nome é Ghayequer Godoy e sou estudante universitário com forte interesse
+        em áreas interdisciplinares envolvendo ciência, tecnologia, política,
+        relações internacionais e análise de dados.
+      </p>
+
+      <p>
+        Tenho experiência em liderança acadêmica, participação em simulações da ONU,
+        apresentações, pesquisas e monitorias. Gosto de desenvolver pensamento crítico,
+        debater ideias e explorar diferentes áreas do conhecimento.
+      </p>
+
+      <p>
+        Entre meus hobbies estão música, leitura, cinema, astronomia e tecnologia.
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================
+  SEÇÃO FORMAÇÃO
+  ========================= -->
+  <section id="formacao" class="section">
+    <div class="container">
+      <h2>Formação</h2>
+
+      <div class="card">
+        <h3>Graduações</h3>
+
+        <ul>
+          <li>Relações Internacionais</li>
+          <li>Ciências Biológicas</li>
+          <li>Comércio Exterior</li>
+          <li>Física</li>
+          <li>Ciência de Dados</li>
+          <li>Ciência Política</li>
+          <li>Teologia</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Idiomas</h3>
+
+        <ul>
+          <li>Português — Nativo</li>
+          <li>Espanhol — Avançado</li>
+          <li>Inglês — Intermediário</li>
+          <li>Italiano — Básico</li>
+          <li>Francês — Básico</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+  SEÇÃO PORTFÓLIO
+  ========================= -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfólio</h2>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card">
+          <h3>Modelos ONU</h3>
+
+          <p>
+            Participação em simulações acadêmicas da ONU,
+            atuando em debates diplomáticos e liderança.
+          </p>
+        </div>
+
+        <div class="portfolio-card">
+          <h3>Projetos Acadêmicos</h3>
+
+          <p>
+            Desenvolvimento de trabalhos acadêmicos envolvendo
+            política, ciência, dados e relações internacionais.
+          </p>
+        </div>
+
+        <div class="portfolio-card">
+          <h3>Monitorias</h3>
+
+          <p>
+            Apoio acadêmico e auxílio em disciplinas universitárias.
+          </p>
+        </div>
+
+        <div class="portfolio-card">
+          <h3>Pesquisa e Apresentações</h3>
+
+          <p>
+            Produção de apresentações, seminários e pesquisas
+            interdisciplinares.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+  SEÇÃO CONTATO
+  ========================= -->
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+
+      <!-- Formulário -->
+      <form id="contact-form">
+
+        <input
+          type="text"
+          id="nome"
+          placeholder="Digite seu nome"
+        >
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Digite seu e-mail"
+        >
+
+        <textarea
+          id="mensagem"
+          placeholder="Digite sua mensagem"
+        ></textarea>
+
+        <button type="submit">
+          Enviar
+        </button>
+
+      </form>
+
+      <!-- Mensagem de retorno -->
+      <p id="form-message"></p>
+    </div>
+  </section>
+
+  <!-- =========================
+  RODAPÉ
+  ========================= -->
+  <footer>
+    <p>
+      © 2026 - Ghayequer Godoy
+    </p>
+  </footer>
+
+  <!-- Arquivo JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
