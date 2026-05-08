@@ -1,0 +1,221 @@
+/* =========================
+ARQUIVO: style.css
+========================= */
+
+/* RESET BÁSICO */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SCROLL SUAVE */
+html{
+  scroll-behavior: smooth;
+}
+
+/* CORPO */
+body{
+  font-family: Arial, sans-serif;
+  background-color: #0f0f14;
+  color: white;
+  line-height: 1.6;
+  transition: 0.3s;
+}
+
+/* TEMA CLARO */
+body.light{
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+
+  position: fixed;
+  width: 100%;
+
+  background-color: rgba(0,0,0,0.8);
+
+  backdrop-filter: blur(10px);
+
+  top: 0;
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo{
+  font-size: 1.3rem;
+}
+
+/* LINKS */
+.nav-links{
+  display: flex;
+  gap: 20px;
+
+  list-style: none;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: white;
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover{
+  color: #9aa4ff;
+}
+
+/* BOTÃO TEMA */
+.theme-btn{
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* SEÇÕES */
+.section{
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 100px 20px;
+}
+
+/* CONTAINER */
+.container{
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* TÍTULOS */
+h2{
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* PARÁGRAFOS */
+p{
+  margin-bottom: 15px;
+}
+
+/* CARDS */
+.card,
+.portfolio-card{
+  background-color: rgba(255,255,255,0.05);
+
+  padding: 20px;
+
+  margin-top: 20px;
+
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.card:hover,
+.portfolio-card:hover{
+  transform: translateY(-5px);
+}
+
+/* GRID PORTFÓLIO */
+.portfolio-grid{
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+
+  gap: 20px;
+}
+
+/* FORMULÁRIO */
+form{
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+input,
+textarea{
+  padding: 15px;
+
+  border: none;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+/* BOTÃO */
+button{
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+/* RODAPÉ */
+footer{
+  text-align: center;
+  padding: 20px;
+}
+
+/* MENU MOBILE */
+.menu-toggle{
+  display: none;
+
+  background: none;
+  border: none;
+
+  color: white;
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 768px){
+
+  .menu-toggle{
+    display: block;
+  }
+
+  .nav-links{
+    display: none;
+
+    flex-direction: column;
+
+    position: absolute;
+
+    top: 70px;
+    right: 20px;
+
+    background-color: #111;
+
+    padding: 20px;
+
+    border-radius: 10px;
+  }
+
+  .nav-links.active{
+    display: flex;
+  }
+}
